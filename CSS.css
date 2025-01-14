@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('pexels-pixabay-315987.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.login-box {
+    -webkit-backdrop-filter: blur(15px); /* For WebKit browsers like Safari */
+    backdrop-filter: blur(15px);
+    background-color: grey;
+    border: 2px solid rgba(255, 255,255, .5);    /* bt3ml shakl le login mn el 7arf */
+    background: transparent;
+    border-radius: 20px;
+    width: 450px;
+    height: 470px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+
+.input-box input {
+    width: 100%;
+    height: 70px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding: 0 8px 0 5px;
+    
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+   top: 1px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    line-height: 57px;
+}
+
+.remember-forget {
+   margin: -15px 0 15px;
+   font-size: .9em;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+}
+
+.remember-forget label input {
+    margin-right: 3px;
+}
+
+.remember-forget a{
+    color: white;
+    text-decoration: none;     /* remove underline */
+    text-align: right;
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color:  white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.register-link {
+    margin: 45px 0 10px;
+    color: white;
+    text-align: center;
+    font-size: .9em;
+    justify-content: space-between;
+
+}
+
+.register-link p a {
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+}
